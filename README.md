@@ -19,10 +19,12 @@ cargo install --version="~0.6" sqlx-cli --no-default-features --features rustls,
 7. install docker desktop
 8. Restart
 9. Add current non-admin user to docker-users group
-Note: 
+
+Note:
 - Ideally you'd want to be able to access docker-daemon without needing to run programs as admin.
 - Windows 10 Computer Management has Local Users and Groups section
 - Windows 11 does not, but you can use powershell to handle this instead.
+
 10. POWERSHELL:
 ```ps
 Get-LocalGroup
@@ -48,5 +50,3 @@ cargo build
 
 You can now try with opening a browser on http://127.0.0.1:8000/login after having launch the web server with `cargo run`.
 There is a default `admin` account with password `everythinghastostartsomewhere`. The available entrypoints are listed in src/startup.rs
-
-
