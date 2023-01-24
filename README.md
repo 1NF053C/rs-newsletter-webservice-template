@@ -13,22 +13,24 @@ cargo install cargo-binutils
 rustup component add llvm-tools-preview
 ```
 6. install sqlx ( https://crates.io/crates/sqlx-cli )
-7. cargo install --version="~0.6" sqlx-cli --no-default-features --features rustls,postgres
-8. install docker desktop
-9. Restart
-10. Add current non-admin user to docker-users group
+```sh
+cargo install --version="~0.6" sqlx-cli --no-default-features --features rustls,postgres
+```
+7. install docker desktop
+8. Restart
+9. Add current non-admin user to docker-users group
 Note: 
 - Ideally you'd want to be able to access docker-daemon without needing to run programs as admin.
 - Windows 10 Computer Management has Local Users and Groups section
 - Windows 11 does not, but you can use powershell to handle this instead.
-11. POWERSHELL:
+10. POWERSHELL:
 ```ps
 Get-LocalGroup
 Get-LocalUser
 Add-LocalGroupMember -Group docker-users -Member YOUR_WINDOWS_ACCOUNT
 ```
-12. Log out and back in
-13. Run Docker desktop (accept user agreement)
+11. Log out and back in
+12. Run Docker desktop (accept user agreement)
 
 ## How to test
 ```sh
