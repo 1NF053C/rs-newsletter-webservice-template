@@ -1,7 +1,7 @@
 # How to get started (from scratch)
 
-- Compare these steps with the "recommended" on zero to production repo
-- Work as local non-admin user always
+- Always compare these steps with the original zero to production repo's readme
+- Always work on your computer as a local non-admin user
 
 1. clone the zero 2 prod repo ( https://github.com/LukeMathWalker/zero-to-production )
 2. install rust via rustup (through cmd if on windows)
