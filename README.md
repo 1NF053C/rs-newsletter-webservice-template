@@ -34,18 +34,17 @@ Add-LocalGroupMember -Group docker-users -Member YOUR_WINDOWS_ACCOUNT
 
 ## How to test
 ```sh
-# How to test
 ./scripts/init_db.sh
 ./scripts/init_redis.sh
 cargo test
 ```
 
 ## How to build
-``sh
+```sh
 ./scripts/init_db.sh
 ./scripts/init_redis.sh
 cargo build
-``
+```
 
 You can now try with opening a browser on http://127.0.0.1:8000/login after having launch the web server with `cargo run`.
 There is a default `admin` account with password `everythinghastostartsomewhere`. The available entrypoints are listed in src/startup.rs
