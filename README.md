@@ -1,3 +1,5 @@
+not associated with the Rust Foundation
+
 # How to get started (from scratch)
 
 - Always compare these steps with the original zero to production repo's readme
